@@ -37,7 +37,7 @@ body {
 body {
   background-color: $white;
   color: $black;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -99,4 +99,21 @@ ol.gradient-list {
       margin-top: 2rem;
     }
   }
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+}
+
+a:hover {
+  opacity: .7
+}
+
+a:active {
+  background-color: black;
+}
+
+a:visited {
+  background-color: #ccc;
 }

@@ -10,8 +10,8 @@ export class AppComponent  {
   submissions: any;
   constructor(){
     this.submissions = [{
-      title: "sample title",
-      url: "sampleuerl.com",
+      title: "Tom and Rita Hanks have been released from the hospital!",
+      url: "https://www.cnn.com/2020/03/16/entertainment/tom-hanks-rita-wilson-released-hospital-coronavirus/index.html",
       permalink: "reddit.com",
     },
     {

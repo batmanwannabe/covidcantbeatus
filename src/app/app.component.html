@@ -3,6 +3,6 @@
 
 <main>
   <ol class="gradient-list">
-      <li *ngFor="let submission of submissions; let i = index">{{submission.title}}</li>
+      <li *ngFor="let submission of submissions; let i = index"><a href={{submission.url}}>{{submission.title}}</a></li>
   </ol>
 </main>
