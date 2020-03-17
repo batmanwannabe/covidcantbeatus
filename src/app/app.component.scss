@@ -45,6 +45,7 @@ main {
   margin: 0 auto;
   max-width: 80rem;
   padding: 0rem;
+  font-family: 'Montserrat';
 }
 
 
@@ -119,7 +120,7 @@ a:visited {
 /* Style the header */
 .header {
   padding: 10px 16px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   color: $black;
   font-family: 'Montserrat';
@@ -131,4 +132,17 @@ h3 {
   text-align: center;
   color: $black;
   font-family: 'Montserrat';
+}
+
+h2 {
+  padding: 10px 16px;
+  font-size: 15px;
+  text-align: center;
+  color: $black;
+  font-family: 'Montserrat';
+}
+.footer{
+  text-align:center;
+  white-space:pre-wrap;
+  font-size: 10px !important;
 }
