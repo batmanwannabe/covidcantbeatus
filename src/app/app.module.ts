@@ -10,4 +10,6 @@ import { HelloComponent } from './hello.component';
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
