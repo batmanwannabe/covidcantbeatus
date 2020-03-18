@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RedditService } from './reddit.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule ],
   declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [RedditService]
 })
 export class AppModule { 
   
