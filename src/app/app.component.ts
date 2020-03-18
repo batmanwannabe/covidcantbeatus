@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs/Observable";
-import * as _ from 'lodash';
-import 'rxjs/add/operator/map';
 import {RedditService} from './reddit.service';
+import {Title} from "@angular/platform-browser";
 
 interface Submission {
     title: string;
@@ -22,10 +21,9 @@ interface Response {
 })
 
 export class AppComponent  {
-  name = 'Angular';
   submissions: any;
-  responseReddit: Response;
-  constructor(private http:HttpClient, private redditService:RedditService){
+  constructor(private http:HttpClient, private redditService:RedditService, private titleService:Title){
+    this.titleService.setTitle("✨Spread Hope✨");
     // this.submissions = [{
     //   title: "Tom and Rita Hanks have been released from the hospital!",
     //   url: "https://www.cnn.com/2020/03/16/entertainment/tom-hanks-rita-wilson-released-hospital-coronavirus/index.html",
@@ -57,8 +55,6 @@ export class AppComponent  {
     //   permalink: "reddit.com",
     // }]
   }
-
-  courses$: Observable<Submission[]>;
 
     ngOnInit() {
         this.redditService.getSubmissions()
